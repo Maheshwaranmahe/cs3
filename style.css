@@ -276,7 +276,7 @@ footer .box-container .box h3{
     color: black;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
     .flex {
         width: 100%;
         height: auto;
@@ -457,9 +457,11 @@ footer .box-container .box h3{
 }
 .heading img{
      width: 125px;
+     text-align: center;
 }
 .heading h3{
      font-size: 20px;
+     text-align: center;
 }
 .facility .container{
      display: flex;
