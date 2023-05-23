@@ -462,6 +462,7 @@ footer .box-container .box h3{
 }
 .heading h3{
      font-size: 20px;
+     margin-top: 5%;
 }
 .facility .container{
      display: flex;
@@ -472,7 +473,7 @@ footer .box-container .box h3{
  }
  .facility .container .box img{
      width: 10rem;
-     margin-left: 25%;    
+     margin-left: 20%;    
  }
  .facility .container .box h3{
     font-size: 18px;
@@ -516,7 +517,6 @@ footer .box-container .box h3{
 }
 .contact .container .image img{
     width: 20rem;   
-    margin-top: 10%;
 }
 .contact .container form{
     margin-left: 10%;
