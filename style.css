@@ -462,7 +462,7 @@ footer .box-container .box h3{
 }
 .heading h3{
      font-size: 20px;
-     margin-top: 5%;
+     margin-bottom: 10%;
 }
 .facility .container{
      display: flex;
@@ -473,11 +473,11 @@ footer .box-container .box h3{
  }
  .facility .container .box img{
      width: 10rem;
-     margin-left: 20%;    
+     margin-left: 18%;    
  }
  .facility .container .box h3{
     font-size: 18px;
-    margin-left: 20%;
+    margin-left: 18%;
  }
  .facility .container .box p{
      font-size: small;
@@ -501,7 +501,7 @@ footer .box-container .box h3{
  }
  .gallery .container img{
      width: 17rem;
-     margin-left: 17%;
+     margin-left: 7%;
  }
  .team .container{
      display: flex;
@@ -519,7 +519,7 @@ footer .box-container .box h3{
     width: 20rem;   
 }
 .contact .container form{
-    margin-left: 10%;
+    margin-left: 12%;
 }
 .contact .container form .box{
     width: 90%;  
