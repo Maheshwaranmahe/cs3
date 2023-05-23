@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-family: 'Merienda One', sans-serif;
+}
+.align{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+html{
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: #be9c79;
+    color:white;
+}
+section{
+    padding: 3rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'Merienda One', sans-serif;
+    background-color: #ede8e3;
+}
+.logo img{
+    width: auto;
+    height: 3rem;
+    float: left;
+    margin: 0.4% 0 0 5%;
+}
+.flex {
+    width: 60%;
+    float: right;
+}
+.flex ul {
+    display: flex;
+    text-align: center;
+    position: relative;   
+}
+.flex ul a {
+    display: block;
+    font-size: 25px;
+    color:#545051;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;  
+    padding: 0 auto;
+}
+.flex ul a:hover {
+    color: #fff;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+.button{
+    display: inline-block;
+    background-color: #e8a863;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    font-weight: 100;
+    padding: 1rem 1rem;
+    margin-right: 3%;
+}
+.button:hover{
+    background-color: #808080;
+}
+.home-bg{
+    background: linear-gradient(90deg, white, transparent 50%), url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-bg .home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.home-bg .home .content{
+    text-align: center;
+}
+.home-bg .home .content h3{
+    font-size: 3rem;
+    color: #333;
+    font-family:'Merienda One', cursive;   
+}
+.home-bg .home .content p{
+    padding: 1.5rem 0;
+    font-family: 'nunito', cursive;
+    font-size: 1.2rem;
+    color: #0f0f0f;
+    line-height: 2;
+}
+.about{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10%;
+    height: 89vh;
+}
+.about .image img{
+    width: 30rem;
+    height: 30rem ;
+}
+.about .content h3{
+    font-size: 2.5rem;
+   color:var(--black);
+   font-family: 'Merienda One', cursive;
+}
+.about .content p{
+    font-size: 1rem;
+    color:#0e0e0e;
+    font-family: 'Lobster', cursive;
+    line-height: 2;
+    padding: 1rem 0;
+}
+.facility{
+    height: 85vh; 
+}
+.facility .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2.5rem;
+    margin-left: 2.5rem;
+}
+.heading{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 1rem;
+}
+.heading img{
+    height: 3rem;
+}
+.heading h3{
+    color: #333;
+    font-size: 2rem;
+    font-family:'Merienda One', cursive;;
+    align-items: center;
+}
+.facility .container .box img{
+    height: 9rem;
+    margin-bottom: 1rem;
+}
+.facility .container .box h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: black;
+}
+.facility .container .box p{
+    line-height: 1.5rem;
+    color: black ;
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+}
+
+.menu .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2.5rem;
+    justify-content: center;
+}
+.menu .container .box{
+    text-align: center;
+}
+.menu .container .box img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.menu .container .box h3{
+    color: black;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.gallery .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    justify-content: center;
+}
+.gallery .container img{
+    height: 90%;
+    width: 95%;
+    object-fit: cover;
+    margin-left: 1.5%;
+}
+.team .container{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    justify-content: center;
+}
+.team .container .box{
+    text-align: center;
+}
+.team .container .box img{
+    width: 95%;
+    height: 95%;
+}
+.team .container .box h3{
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 1%;
+    align-items: center;
+}
+.contact .container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap:2rem;
+ }
+.contact .container .image img{
+    width: 35rem;
+    height: 30rem;   
+}
+.contact .container form{
+    border:.2rem solid black;
+    width: 70%;
+    height: 70%;
+    padding: 0.5rem;
+    text-align: center;
+}
+ .contact .container form h3{
+    font-size: 2rem;
+    color:black;
+} 
+.contact .container form .box{
+    width: 70%;
+    height: 1vh;
+    padding:1rem;
+    font-size: 1.rem;
+    color:black;
+    border:.2rem solid black;
+    margin:1rem 0;
+}
+footer .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5rem;  
+    align-items: flex-start;
+}
+footer .box-container .box{
+    text-align: center;
+}
+footer .box-container .box i{ 
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #be9c79;
+    color: white;
+    font-size: x-large;
+}
+footer .box-container .box p{
+    line-height: 2;
+    font-size: 1.25rem;
+    color: #666;
+}
+footer .box-container .box h3{
+    font-size: large;
+    color: black;
+}
+
+@media screen and (max-width:900px){
+    .flex {
+        width: 100%;
+        height: auto;
+}
+.flex ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+}  
+.flex ul a {
+    text-align: center;
+    width: 25%;
+    height: 70%;
+    background-color: #ede8e3;
+    margin-right: 0;
+}
+.menu-icon {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: -5%;
+    line-height: 60px;
+}
+#menuToggle:checked ~ ul{
+    max-height: 350px;
+}
+.menu-icon i {
+    font-size: 1.7em;
+}
+.home-bg .home .content h3{
+     font-size: 25px;
+     margin-right: 40%;
+}
+.home-bg .home .content p{
+     margin-right: 40%;
+}
+.button{
+     margin-right: 55%;
+     font-size: 80%;
+}
+.about{
+     display: flex;
+     height: auto;
+}
+.about .image img{
+   width: 20rem;
+}
+.about .content h3{
+    font-size: 17px;
+}
+.about .content p{
+     font-size: 10px;
+}
+.heading img{
+     width: 125px;
+}
+.heading h3{
+     font-size: 20px;
+}
+.facility .container{
+     display: flex;
+}
+.facility{
+     height: auto;
+ }
+ .facility .container .box img{
+     width: 10rem;
+     margin-left: 16%;    
+ }
+ .facility .container .box h3{
+    font-size: 18px;
+    margin-left: 20%;
+ }
+ .facility .container .box p{
+     font-size: small;
+ }
+ .menu .container{
+     height: auto;
+ }
+ .menu .container .box img{
+     width: 15rem;
+ }
+ .menu .container .box h3{
+     font-size: 18px;
+ }
+ .gallery .container{
+     height: auto;
+     gap: .5rem;
+ }
+ .gallery .container img{
+     width: 17rem;
+     margin-left: 7%;
+ }
+ .team .container{
+     flex-direction: column;
+ }
+ .team .container .box img{
+     width: 17rem;
+}
+.contact .container{
+    height: auto;
+    display: flex;
+}
+.contact .container .image img{
+    width: 20rem;   
+    margin-top: -40%;
+}
+.contact .container form{
+    margin-left: 10%;
+}
+.contact .container form .box{
+    width: 90%;  
+}
+.contact .container form h3{
+    font-size: 10px;
+}
+.contact .container form .button{
+    margin-left: 17%;
+}
+}
+
+@media screen and (max-width:600px){
+    .flex {
+        width: 100%;
+        height: auto;
+}
+.flex ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+}  
+.flex ul a {
+    text-align: center;
+    width: 25%;
+    height: 70%;
+    background-color: #ede8e3;
+    margin-right: 0;
+}
+.menu-icon {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: -10%;
+    line-height: 60px;
+}
+#menuToggle:checked ~ ul{
+    max-height: 350px;
+}
+.menu-icon i {
+    font-size: 1.7em;
+}
+.home-bg .home .content h3{
+     font-size: 25px;
+     margin-right: 40%;
+}
+.home-bg .home .content p{
+     margin-right: 40%;
+}
+.button{
+     margin-right: 55%;
+     font-size: 80%;
+}
+.about{
+     display: flex;
+     flex-direction: column;
+     height: auto;
+}
+.about .image img{
+   width: 20rem;
+}
+.about .content h3{
+    font-size: 17px;
+}
+.about .content p{
+     font-size: 10px;
+}
+.heading img{
+     width: 125px;
+}
+.heading h3{
+     font-size: 20px;
+}
+.facility .container{
+     display: flex;
+     flex-direction: column;
+}
+.facility{
+     height: auto;
+ }
+ .facility .container .box img{
+     width: 10rem;
+     margin-left: 16%;    
+ }
+ .facility .container .box h3{
+    font-size: 18px;
+    margin-left: 20%;
+ }
+ .facility .container .box p{
+     font-size: small;
+ }
+ .menu .container{
+     height: auto;
+     display: flex;
+     flex-direction: column;
+ }
+ .menu .container .box img{
+     width: 15rem;
+ }
+ .menu .container .box h3{
+     font-size: 18px;
+ }
+ .gallery .container{
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     gap: .5rem;
+ }
+ .gallery .container img{
+     width: 17rem;
+     margin-left: 7%;
+ }
+ .team .container{
+     display: flex;
+     flex-direction: column;
+ }
+ .team .container .box img{
+     width: 17rem;
+}
+.contact .container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact .container .image img{
+    width: 20rem;   
+}
+.contact .container form{
+    margin-left: 10%;
+}
+.contact .container form .box{
+    width: 90%;  
+}
+.contact .container form h3{
+    font-size: 10px;
+}
+.contact .container form .button{
+    margin-left: 17%;
+}
+footer .box-container{
+    display: flex;
+    flex-direction: column;
+}
+footer .box-container .box{
+    margin-left: 15%;
+    width: 17rem;
+}  
+}
